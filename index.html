@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Light Bulb Using JS</title>
+    <!-- Common styles -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="landingPageContent" class="Landing-page-info">
+        <h1>Illuminating the Shadow of Brain Tumors</h1>
+        <p>Join us on our journey, through the world of brain tumors. We aim to shed light on the details surrounding brain tumors presenting visuals to highlight important figures and information. Our objective is to offer an enlightening perspective on the effects and obstacles posed by this illness, with a focus on providing clarity and knowledge. Come along as we illuminate these aspects striving for a tomorrow through increased awareness.</p>
+        <p>Ready to test your knowledge? Take our quick quiz to see how much you really know about brain tumors.</p>
+        <button id="quizButton" class="quiz-button">Yes!</button>
+    </div>
+    <div id="lightBulb" class="light">
+        <div class="wire"></div>
+        <div class="bulb">
+            <span></span>
+            <span></span>
+        </div>
+    </div>  
+    <div id="quizSection" class="quiz-section hidden">
+        <h2 class="quiz-header">Brain Cancer Knowledge Quiz</h2>
+    </div>
+    <div id="resultsSection" class="hidden">
+        <div class="ring" id="quizRing">
+            <svg width="200" height="200" class="circle-chart">
+                <circle class="circle-chart__background" stroke="#fff" stroke-width="20" fill="none" cx="100" cy="100" r="80" />
+                <circle class="circle-chart__circle" stroke="#00acc1" stroke-width="20" stroke-dasharray="0,100" stroke-linecap="round" fill="none" cx="100" cy="100" r="80" />
+            </svg>
+        </div>
+        <div class="percent">
+            <span class="percent__int">0%</span>
+        </div>
+        <div id="scoreExplanation" class="score-text">Your score is loading...</div>
+        <button id="continueButton" class="continue-button">Continue Learning</button>
+    </div>
+    <div id="brainFunctionVisualization">
+        <h2>Brain Function Visualisation</h2>
+        <iframe src="/Users/304026/Downloads/brain-function-visualisation-using-svg 2/dist/brain-parts-index2.html" style="width:100%; height:700px; border:none;"></iframe>
+        <div class="button-container">
+            <button class="back-button" style="display:none;">Back</button> <!-- Hide back button on the first page -->
+            <button class="next-button" onclick="window.location.href = 'benign-malignant-index.html';">Next</button>
+        </div>
+    </div>
+
+
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
